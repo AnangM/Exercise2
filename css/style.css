@@ -1,0 +1,26 @@
+.calculator{
+    max-width:400px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.btn{
+    width: 100% !important;
+}
+.col{
+    padding: 0.5em;
+}
+.calculator-display{
+    color: #fff;
+    padding-left:0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    text-align: left !important;
+    width: 100%;
+    border-radius: 3px;
+    background-color: grey;
+}
+.is-depressed{
+    background-color: #f00 !important;
+}
