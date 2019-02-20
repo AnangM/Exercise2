@@ -12,8 +12,9 @@ const calculate = (num1, op, num2) => {
         result = parseFloat(num1) * parseFloat(num2);
     }else if(op==='div'){
         result = parseFloat(num1) / parseFloat(num2);
+    }else if(op === 'pow'){
+        result = Math.pow(parseFloat(num1), parseFloat(num2));
     }
-
     return result;
 }
 
@@ -55,14 +56,17 @@ keys.addEventListener('click',e => {
             action === 'sub' ||
             action === 'mult' ||
             action === 'div' || 
-            action === 'pow' ||
-            action === 'percent'
+            action === 'pow'
         ){
             calculator.dataset.firstVal = display.textContent;
             calculator.dataset.operator = action;
             key.classList.add('is-depressed');
             calculator.dataset.previousKeyType = 'operator';
             console.log("Operator");
+        }
+        if(action === 'percent'){
+            var firstNum = display.textContent;
+            display.textContent = parseFloat(firstNum) / 100;
         }
         if(action === 'backspace'){
             if(display.textContent.length == 1){
