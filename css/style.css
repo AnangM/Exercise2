@@ -6,6 +6,8 @@
 
 .btn{
     width: 100% !important;
+    height: 45px;
+    font-size: 1.2em;
 }
 .col{
     padding: 0.5em;
